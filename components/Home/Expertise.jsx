@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function Layout({ children, title = "Jonas Portfolio" }) {
   return (
-    <section className="py-20 bg-black max-w-[1280px] mx-[146px]">
+    <section className="py-20 bg-black max-w-[1280px] mx-auto">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6 text-white"> My Expertise </h2>{" "}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -13,7 +13,7 @@ export default function Home() {
       <Expertise />
       <About />
       <Porfolio />
-      <section className="py-20 bg-white max-w-[1280px] mx-[146px]">
+      <section className="py-20 bg-white max-w-[1280px] mx-auto">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6"> Customer Testimonials </h2>{" "}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,7 +46,7 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="py-20 bg-gray-50 max-w-[1280px] mx-[146px] rounded-b-3xl"
+        className="py-20 bg-gray-50 max-w-[1280px] mx-auto rounded-b-3xl"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6"> Contact Me </h2>{" "}
