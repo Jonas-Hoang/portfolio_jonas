@@ -1,83 +1,19 @@
 // pages/index.js
 
 import Layout from "../components/Layout";
-import Introduce from "../components/Introduce";
-import Expertise from "../components/Expertise";
+import Introduce from "../components/Home/Introduce";
+import Expertise from "../components/Home/Expertise";
+import About from "../components/Home/About";
+import Porfolio from "../components/Home/Porfolio";
 
 export default function Home() {
   return (
     <Layout>
       <Introduce />
       <Expertise />
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6"> About Me </h2>{" "}
-          <p className="text-xl text-gray-700 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce vel
-            sapien elit.In malesuada semper mi, nec pulvinar.{" "}
-          </p>{" "}
-          <img
-            src="/path/to/your-photo.jpg"
-            alt="Your Name"
-            className="mx-auto rounded-full w-48 h-48 object-cover mb-4"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed nonne
-            merninisti licere mihi ista probare, quae sunt a te dicta.Refert
-            tamen, quo modo.{" "}
-          </p>{" "}
-        </div>{" "}
-      </section>
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6"> My Portfolio </h2>{" "}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <img
-                src="/path/to/project1.jpg"
-                alt="Project 1"
-                className="mb-4 rounded-lg"
-              />
-              <h3 className="text-xl font-bold mb-2"> Project One </h3>{" "}
-              <p className="text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-              </p>{" "}
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">
-                View Details{" "}
-              </a>{" "}
-            </div>{" "}
-            <div className="bg-white p-6 rounded-lg shadow">
-              <img
-                src="/path/to/project2.jpg"
-                alt="Project 2"
-                className="mb-4 rounded-lg"
-              />
-              <h3 className="text-xl font-bold mb-2"> Project Two </h3>{" "}
-              <p className="text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-              </p>{" "}
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">
-                View Details{" "}
-              </a>{" "}
-            </div>{" "}
-            <div className="bg-white p-6 rounded-lg shadow">
-              <img
-                src="/path/to/project3.jpg"
-                alt="Project 3"
-                className="mb-4 rounded-lg"
-              />
-              <h3 className="text-xl font-bold mb-2"> Project Three </h3>{" "}
-              <p className="text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-              </p>{" "}
-              <a href="#" className="text-blue-600 hover:underline mt-2 block">
-                View Details{" "}
-              </a>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
-      </section>
-      <section className="py-20 bg-white">
+      <About />
+      <Porfolio />
+      <section className="py-20 bg-white max-w-[1280px] mx-[146px]">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6"> Customer Testimonials </h2>{" "}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -108,7 +44,10 @@ export default function Home() {
           </div>{" "}
         </div>{" "}
       </section>
-      <section id="contact" className="py-20 bg-gray-50">
+      <section
+        id="contact"
+        className="py-20 bg-gray-50 max-w-[1280px] mx-[146px] rounded-b-3xl"
+      >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6"> Contact Me </h2>{" "}
           <form className="bg-white p-6 rounded-lg shadow">
